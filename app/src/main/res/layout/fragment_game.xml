@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fond"
+    android:padding="16dp"
+    tools:context=".GameFragment">
+
+    <TextView
+        android:id="@+id/level_tv"
+        android:layout_width="match_parent"
+        android:background="@drawable/oval"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/first_iv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="18dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level_tv" />
+
+    <ImageView
+        android:id="@+id/second_iv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="18dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level_tv" />
+
+    <ImageView
+        android:id="@+id/third_iv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="18dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/first_iv" />
+
+    <ImageView
+        android:id="@+id/fourth_iv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="18dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/second_iv" />
+
+    <EditText
+        android:id="@+id/input_name_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textCapWords"
+        android:layout_marginTop="12dp"
+        android:textSize="30sp"
+        android:background="@drawable/oval_btn"
+        app:layout_constraintTop_toBottomOf="@id/fourth_iv" />
+
+    <Button
+        android:id="@+id/try_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="try"
+        android:textSize="30sp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/oval"
+        app:layout_constraintTop_toBottomOf="@id/input_name_ed"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
